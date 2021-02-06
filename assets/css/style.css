@@ -10,28 +10,35 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 30px 50px;
+    align-items: center;
+    /*padding: 30px 50px; */
     border: 20px;
-    background-color: lightgray;;
+    border-color: rgba(25, 4, 29, 0.801);
+    border-bottom-style: double;
+    background-color: lightgray;
 }
 header h1 {
     font-size: 36px;
 }
 h1 a {
     text-decoration: none;
+    color: brown;
 }
-.headermenu ul {
+.headermenu nav ul {
     display: flex;
 }
 .headermenu ul li {
     font-size: 24px;
     font-weight: bold;
-    color: darkslategray;
     list-style: none;
-    padding: 5px 50px;
+    padding: 0px 50px;
+    border-style: solid;
+    border-color: red;
+    border-width: 10px;
 }
 .headermenu ul li a {
     text-decoration: none;
+    color: darkslategrey;
 }
 .headermenu ul li:hover {
     font-size: 28px;
@@ -39,7 +46,9 @@ h1 a {
     background-color:darkseagreen;
 }
 
-/* Hero section */
+/****************  Take out for now
+
+/* Hero section 
 .hero-section {
     padding: 30px 50px;
     background-color: yellowgreen;
@@ -48,26 +57,27 @@ h1 a {
     margin: 0 50px 0 0;
 }
 
-/* About Me Section */
+/* About Me Section 
 .aboutme-section {
     padding: 30px 50px;
     background-color: beige;
 }
 
-/* Work Section */
+/* Work Section 
 .work-section {
     padding: 30px 50px;
     background-color: burlywood;
 }
 
-/* Contact Me Section */
+/* Contact Me Section 
 .contactme-section {
     padding: 30px 50px;
     background-color: cadetblue;
 }
 
-/* footer */
+/* footer 
 footer {
     padding: 20px 50px;
     background-color: cornsilk;
 }
+*/
