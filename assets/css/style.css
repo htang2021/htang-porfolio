@@ -1,0 +1,73 @@
+/*Remove browser defaults*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header section styling */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 50px;
+    border: 20px;
+    background-color: lightgray;;
+}
+header h1 {
+    font-size: 36px;
+}
+h1 a {
+    text-decoration: none;
+}
+.headermenu ul {
+    display: flex;
+}
+.headermenu ul li {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkslategray;
+    list-style: none;
+    padding: 5px 50px;
+}
+.headermenu ul li a {
+    text-decoration: none;
+}
+.headermenu ul li:hover {
+    font-size: 28px;
+    color: darkolivegreen;
+    background-color:darkseagreen;
+}
+
+/* Hero section */
+.hero-section {
+    padding: 30px 50px;
+    background-color: yellowgreen;
+}
+.hero-section h2 {
+    margin: 0 50px 0 0;
+}
+
+/* About Me Section */
+.aboutme-section {
+    padding: 30px 50px;
+    background-color: beige;
+}
+
+/* Work Section */
+.work-section {
+    padding: 30px 50px;
+    background-color: burlywood;
+}
+
+/* Contact Me Section */
+.contactme-section {
+    padding: 30px 50px;
+    background-color: cadetblue;
+}
+
+/* footer */
+footer {
+    padding: 20px 50px;
+    background-color: cornsilk;
+}
