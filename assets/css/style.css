@@ -11,7 +11,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    /*padding: 30px 50px; */
+    padding: 30px 50px;
     border: 20px;
     border-color: rgba(25, 4, 29, 0.801);
     border-bottom-style: double;
@@ -19,6 +19,11 @@ header {
 }
 header h1 {
     font-size: 36px;
+    column-width: 200px;
+    text-align: right;
+    border-width: 5px;
+    border-color: purple;
+    border-style: solid;
 }
 h1 a {
     text-decoration: none;
@@ -31,10 +36,11 @@ h1 a {
     font-size: 24px;
     font-weight: bold;
     list-style: none;
-    padding: 0px 50px;
+    padding: 0px 20px;
     border-style: solid;
     border-color: red;
     border-width: 10px;
+    border-radius: 8px;
 }
 .headermenu ul li a {
     text-decoration: none;
@@ -46,38 +52,89 @@ h1 a {
     background-color:darkseagreen;
 }
 
-/****************  Take out for now
-
-/* Hero section 
+/* Hero section */
 .hero-section {
     padding: 30px 50px;
     background-color: yellowgreen;
 }
 .hero-section h2 {
     margin: 0 50px 0 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-/* About Me Section 
+/* About Me Section */
 .aboutme-section {
+    width: auto;
+    display: flex;
+    justify-content: space-betwee;
+    flex-wrap:wrap;
     padding: 30px 50px;
     background-color: beige;
 }
-
-/* Work Section 
-.work-section {
-    padding: 30px 50px;
-    background-color: burlywood;
+.aboutme-section h2 {
+    font-size: xx-large;
+    border-color: darkslategray;
+    border-right-width:3px;
+    border-right-style: solid;
+    text-align: right;
+    margin: 0 50px 0 100px;
+    padding-right: 8px;
+}
+.whataboutme {
+    margin: 0 100px 0 50px;
+    color: brown;
+    border-color: brown;
+    border-width: 5px;
+    border-style: solid;
+    text-align: left;
 }
 
-/* Contact Me Section 
+/* Work Section */
+.work-section {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    padding: 30px 50px;
+    background-color: burlywood;
+    
+}
+.work-section h2 {
+    font-size: xx-large;
+    color: brown;
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    text-align: right;
+}
+.projects {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.project-a {
+    border-color: lightsalmon;
+    border-style: solid;
+    border-width: 5px;
+}
+.run-buddy {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+/* Contact Me Section */
 .contactme-section {
     padding: 30px 50px;
     background-color: cadetblue;
 }
 
-/* footer 
+/* footer */
 footer {
     padding: 20px 50px;
     background-color: cornsilk;
 }
-*/
