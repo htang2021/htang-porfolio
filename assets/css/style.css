@@ -21,9 +21,7 @@ header h1 {
     font-size: 36px;
     column-width: 200px;
     text-align: right;
-    border-width: 5px;
-    border-color: purple;
-    border-style: solid;
+    border: 5px solid purple;
 }
 h1 a {
     text-decoration: none;
@@ -37,9 +35,7 @@ h1 a {
     font-weight: bold;
     list-style: none;
     padding: 0px 20px;
-    border-style: solid;
-    border-color: red;
-    border-width: 10px;
+    border: 10px solid red;
     border-radius: 8px;
 }
 .headermenu ul li a {
@@ -59,9 +55,7 @@ h1 a {
 }
 .hero-section h2 {
     margin: 0 50px 0 0;
-    border-width: 5px;
-    border-style: solid;
-    border-color: red;
+    border: 5px solid red;
     border-radius: 10px;
     display: flex;
     justify-content: flex-end;
@@ -94,7 +88,7 @@ h1 a {
     text-align: left;
 }
 
-/* Work Section */
+/*************** Work Section ***************/
 .work-section {
     display: flex;
     justify-content:space-evenly;
@@ -103,6 +97,7 @@ h1 a {
     background-color: burlywood;
     
 }
+/***** Work heading container ******/
 .work-section h2 {
     font-size: xx-large;
     color: brown;
@@ -111,23 +106,70 @@ h1 a {
     border-style: solid;
     text-align: right;
 }
+/****** Projects Container *******/
 .projects {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
+    /*display:; */
+    /*justify-content: space-between; */
+    width: 60%;
 }
+/* Top project A */
 .project-a {
-    border-color: lightsalmon;
-    border-style: solid;
-    border-width: 5px;
+    position: relative;
+    width: 100%;
+    border: 5px solid lightsalmon;
+    margin: 5px;
+}
+.project-a img {
+    display: block;
+    width: 100%;
 }
 .run-buddy {
     position: absolute;
     bottom: 10px;
-    left: 10px;
+    left: 0px;
+    background-color: brown;
+    color: white;
+    padding: 20px;
+}
+/* Project B & C Container */
+.project-bc {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100px;
+    margin: 5px;
+}
+.project-b {
+    flex: 50%;
+    border: 5px solid red;
+    background-image: url("../../../code-refactor/assets/images/digital-marketing-meeting.jpg");
+}
+.project-c {
+    flex: 50%;
+    border: 5px solid rgb(47, 24, 83);
+    background-color:lightgrey;
 }
 
-/* Contact Me Section */
+/* Project D & E Contaier */
+.project-de {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100px;
+    margin: 5px;
+}
+.project-d {
+    flex: 50%;
+    border: 5px solid rgb(48, 37, 51);
+    background-color:greenyellow;
+}
+.project-e {
+    flex: 50%;
+    border: 5px solid rgb(70, 5, 14);
+    background-color:floralwhite;
+}
+
+/********** Contact Me Section **************/
 .contactme-section {
     padding: 30px 50px;
     background-color: cadetblue;
