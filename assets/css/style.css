@@ -70,6 +70,7 @@ h1 a {
     justify-content:space-evenly;
     flex-wrap: wrap;
     padding: 30px 50px;
+    border: 5px solid orange;
 }
 .aboutme-section h2 {
     font-size: xx-large;
@@ -95,7 +96,7 @@ h1 a {
     justify-content:space-evenly;
     flex-wrap: wrap;
     padding: 30px 50px;
-    border: 5px solid white;
+    border: 5px solid blue;
 }
 /***** Work heading container ******/
 .work-section h2 {
@@ -213,35 +214,46 @@ h1 a {
     display: flex;
     justify-content:space-evenly;
     flex-wrap: wrap;
-    padding: 20px 50px;
-    border: 5px solid red;
+    /*padding: 30px 50px;*/
+    border: 5px solid orange;
+   /* width: 100%; */
 }
 .contactme {
+    width: 40%;
     border: 5px solid white;
 }
 .contactme h2 {
-    height: 100%;
     font-size: xx-large;
     border-color: darkslategray;
     border-right-width:3px;
     border-right-style: solid;
     text-align: right;
-    color: brown;
     padding-right: 8px;
 }
 .contactme-list ul {
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    border: 10px solid white;
+    border: 5px solid brown;
+    vertical-align: middle;
+    /*display:inline-flex;
+    width: 60%;
+    margin-right: 50px;
+    margin-left: 20px;
+    color: rgb(42, 120, 165);
+    border: 5px solid brown;
+    text-align: left; */
 }
 .contactme-list ul li {
-    padding: 0 20px;
-    font-size: 24px;
+    padding: 0 5px;
+    font-size: 25px;
     font-weight: bold;
+    color: darkslategray;
     list-style: none;
-    margin: 0 10px;
-    border: 10px solid white;
-    border-radius: 8px;
+    margin: 0 25px;
+    border-bottom: 5px solid black;
+}
+.contactme-list ul li a {
+    text-decoration: none;
+    color: darkslategray;
 }
