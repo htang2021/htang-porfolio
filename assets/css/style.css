@@ -11,10 +11,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 50px;
-    border: 20px;
-    border-color: rgba(25, 4, 29, 0.801);
-    border-bottom-style: double;
+    padding: 30px 0px;
+    border: 20px double rgba(25, 4, 29, 0.801);
     background-color: lightgray;
 }
 header h1 {
@@ -69,7 +67,7 @@ h1 a {
     display: flex;
     justify-content:space-evenly;
     flex-wrap: wrap;
-    padding: 30px 50px;
+    padding: 30px 0px;
     border: 5px solid orange;
 }
 .aboutme-section h2 {
@@ -78,13 +76,14 @@ h1 a {
     border-right-width:3px;
     border-right-style: solid;
     text-align: right;
+    column-width: 100px;
  /*   margin: 0 50px 0 100px; */
     padding-right: 8px;
 }
 .whataboutme {
     width: 60%;
     margin-right: 50px;
-    margin-left: 20px;
+    margin-left: 0px;
     color: rgb(42, 120, 165);
     border: 5px solid brown;
     text-align: left;
@@ -95,7 +94,7 @@ h1 a {
     display: flex;
     justify-content:space-evenly;
     flex-wrap: wrap;
-    padding: 30px 50px;
+    padding: 30px 0px;
     border: 5px solid blue;
 }
 /***** Work heading container ******/
@@ -106,6 +105,7 @@ h1 a {
     border-right-width:3px;
     border-right-style: solid;
     text-align: right;
+    column-width: 100px;
     color: brown;
     padding-right: 8px;
 }
@@ -214,23 +214,47 @@ h1 a {
     display: flex;
     justify-content:space-evenly;
     flex-wrap: wrap;
-    /*padding: 30px 50px;*/
-    border: 5px solid orange;
-   /* width: 100%; */
+    padding: 30px 0px;
+    border: 5px solid red;
 }
-.contactme {
-    width: 40%;
-    border: 5px solid white;
-}
-.contactme h2 {
+/***** Work heading container ******/
+.contactme-section h2 {
+    height: 100%;
     font-size: xx-large;
     border-color: darkslategray;
     border-right-width:3px;
     border-right-style: solid;
     text-align: right;
+    column-width: 100px;
+    color: brown;
     padding-right: 8px;
 }
+/*
+.contactme-section {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    padding: 30px 0px;
+    border: 5px solid orange;
+    width: 100%;
+}
+
+.contactme {
+    column-width: 100px;
+    border: 5px solid white;
+} 
+.contactme-section h2 {
+    font-size: xx-large;
+    border-color: darkslategray;
+    border-right-width:3px;
+    border-right-style: solid;
+    text-align: right;
+    column-width: 100px;
+    padding-right: 8px;
+}
+*/
 .contactme-list ul {
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
