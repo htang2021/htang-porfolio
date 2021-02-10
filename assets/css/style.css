@@ -59,70 +59,50 @@ h1 a {
     justify-content: flex-end;
 }
 
-/* About Me Section */
+/*  Main body content shared layout */
 .main-content {
     background-color: rgb(211, 214, 238);
 }
-.aboutme-section {
+.section-container {
     display: flex;
-    justify-content:space-evenly;
     flex-wrap: wrap;
-    padding: 30px 0px;
-    border: 5px solid orange;
+    width: 100%;
+    padding: 20px;
 }
-.aboutme-section h2 {
-    font-size: xx-large;
+.left-head {
+    flex: 20%;
+    font-size: x-large;
     border-color: darkslategray;
     border-right-width:3px;
     border-right-style: solid;
     text-align: right;
-    column-width: 100px;
- /*   margin: 0 50px 0 100px; */
     padding-right: 8px;
+    max-width: 200px;
 }
+.whataboutme, .projects, .contactme-list {
+    flex: 80%;
+    max-width: 700px;
+    margin-left: 50px;
+}
+
+/****** About Me Section */
+
 .whataboutme {
-    width: 60%;
-    margin-right: 50px;
-    margin-left: 0px;
     color: rgb(42, 120, 165);
     border: 5px solid brown;
     text-align: left;
 }
 
 /*************** Work Section ***************/
-.work-section {
-    display: flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    padding: 30px 0px;
-    border: 5px solid blue;
-}
-/***** Work heading container ******/
-.work-section h2 {
-    height: 100%;
-    font-size: xx-large;
-    border-color: darkslategray;
-    border-right-width:3px;
-    border-right-style: solid;
-    text-align: right;
-    column-width: 100px;
-    color: brown;
-    padding-right: 8px;
-}
+
 /****** Projects Container *******/
-.projects {
-    width: 60%;
-    margin-right: 50px;
-    margin-left: 20px;
-    border: 5px solid white;
-}
 /* Top project A */
 .project-a {
     position: relative;
-    width: 100%;
     border: 5px solid lightsalmon;
-    margin: 5px;
+    margin-bottom: 10px;
 }
+
 .project-a img {
     display: block;
     width: 100%;
@@ -141,11 +121,12 @@ h1 a {
     justify-content: space-between;
     flex-wrap: wrap;
     height: 100px;
-    margin: 5px;
+    margin-bottom: 10px;
 }
 .project-b {
     flex: 50%;
     border: 5px solid red;
+    /*margin-right: 10px; */
     background-image: url("../../../code-refactor/assets/images/digital-marketing-meeting.jpg");
 }
 .project-b h3 {
@@ -178,7 +159,6 @@ h1 a {
     justify-content: space-between;
     flex-wrap: wrap;
     height: 100px;
-    margin: 5px;
 }
 .project-d {
     flex: 50%;
@@ -210,63 +190,21 @@ h1 a {
 }
 
 /********** Contact Me Section **************/
-.contactme-section {
-    display: flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    padding: 30px 0px;
-    border: 5px solid red;
-}
-/***** Work heading container ******/
-.contactme-section h2 {
-    height: 100%;
-    font-size: xx-large;
-    border-color: darkslategray;
-    border-right-width:3px;
-    border-right-style: solid;
-    text-align: right;
-    column-width: 100px;
-    color: brown;
-    padding-right: 8px;
-}
-/*
-.contactme-section {
-    display: flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    padding: 30px 0px;
-    border: 5px solid orange;
-    width: 100%;
-}
 
-.contactme {
-    column-width: 100px;
-    border: 5px solid white;
-} 
-.contactme-section h2 {
-    font-size: xx-large;
-    border-color: darkslategray;
-    border-right-width:3px;
-    border-right-style: solid;
-    text-align: right;
-    column-width: 100px;
-    padding-right: 8px;
+.contactme-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
 }
-*/
 .contactme-list ul {
-    width: 60%;
+    /*width: 60%; */
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     border: 5px solid brown;
-    vertical-align: middle;
-    /*display:inline-flex;
-    width: 60%;
-    margin-right: 50px;
-    margin-left: 20px;
-    color: rgb(42, 120, 165);
-    border: 5px solid brown;
-    text-align: left; */
+    align-items: center;
 }
 .contactme-list ul li {
     padding: 0 5px;
