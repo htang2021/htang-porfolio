@@ -110,11 +110,18 @@ h1 a {
 }
 
 /****** About Me Section */
-
 .whataboutme {
+    display: flex;
+}
+.selfie img {
+    height:300px;
+    width:250px;
+}
+.write-up {
     color:rgb(58, 58, 83);
     border: none;
     text-align: left;
+    margin-left: 20px;
 }
 
 /*************** Work Section ***************/
@@ -126,14 +133,18 @@ h1 a {
     border: var(--container-border);
     margin-bottom: 10px;
 }
+.project-a:hover {
+    transform: scale(1.05);
+}
 
 .project-a img {
     display: block;
     width: 100%;
 }
+/*
 .project-a img:hover {
     transform: scale(1.1);
-}
+}*/
 .project-a h3 {
     position: absolute;
     bottom: 10px;
@@ -163,7 +174,7 @@ h1 a {
     background-position: center;
 }
 .project-b:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .project-b h3 {
     position: relative;
@@ -186,7 +197,7 @@ h1 a {
     background-position: center;
 }
 .project-c:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .project-c h3 {
     position: relative;
@@ -218,7 +229,7 @@ h1 a {
     background-size: cover;
 }
 .project-d:hover {
-    transform:scale(1.1);
+    transform:scale(1.05);
 }
 .project-d h3 {
     position: relative;
@@ -238,7 +249,7 @@ h1 a {
     background-size: cover;
 }
 .project-e:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .project-e h3 {
     position: relative;
