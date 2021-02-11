@@ -54,6 +54,6 @@ This instruction below assumes that a project and repo were created early on and
 4. As shown in the image from 3, if saved successfully, GitHub will return a live site URL:
 https://htang2021.github.io/htang-porfolio/
 
-If you do not see a clear indication that the site is "published", give it a minute for the backend to allocate resources to launch it.  Once you see "Your site is published at https://...., it's golden!
+If you do not see a clear indication that the site is "published", give it a minute for the backend to allocate resources to launch it.  Once you see "Your site is published at https://....", it's golden!
 
 End of README.md - updated by Hung Tang on 2/11/21
