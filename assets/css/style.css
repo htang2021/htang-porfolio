@@ -291,3 +291,100 @@ h1 a {
     text-decoration: none;
     color: darkslategray;
 }
+
+/************ Media Query for smaller "screen" sizes ***********/
+@media screen and (max-width: 980px) {
+    header h1 {
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    .section-container {
+        justify-content: center;
+        width: 100%;
+        margin-right: 50px;
+    }
+    .left-head {
+        border-color: darkslategray;
+        border-right: none;
+        border-bottom-width:3px;
+        border-bottom-style: solid;
+        text-align: center;
+        padding-bottom: 8px;
+        margin-bottom: 10px;
+    }
+    .contactme-container {
+        justify-content: center;
+        width: 100%;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+    }
+    header h1 {
+        margin-bottom: 10px;
+    }
+    .hero-section {
+        justify-content: center;
+    }
+    .section-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .whataboutme {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 50px;
+    }
+    .selfie {
+        justify-content: center;
+    }
+    .write-up {
+        justify-content: center;
+    }
+    .projects {
+        justify-content: center;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .headermenu nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .headermenu nav ul li {
+        display: block;
+    }
+    .projects {
+        margin-top: 30px;
+    }
+    .project-bc {
+        height: auto;
+    }
+    .project-b, .project-c, .project-d, .project-e {
+        margin: 5px 0;
+    }
+    .project-b h3, .project-c h3, .project-d h3, .project-e h3 {
+        margin: 5px 0;
+    }
+    .project-b, .project-d, .project-b h3, .project-d h3 {
+        margin-bottom: 10px;
+    }
+    .project-de {
+        height: auto;
+    }
+    .contactme-list {
+        margin-right: 50px;
+    }
+    .contactme-list ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
