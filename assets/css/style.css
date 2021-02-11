@@ -1,9 +1,11 @@
-/*Remove browser defaults*/
+/* Defined variables with common properties across the page */
 :root {
     --container-border: 2px solid white;
     --container-bgcolor: rgb(58, 58, 83);
     --primary-fontcolor: rgb(58, 58, 83);
 }
+
+/*Remove browser defaults*/
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +19,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 35px;
-    /*border: 5px solid rgba(25, 4, 29, 0.801); */
     background-color: var(--container-bgcolor);
     width: 100%;
 }
@@ -25,8 +26,6 @@ header h1 {
     font-size: 38px;
     column-width: 200px;
     text-align: right;
-    /*border: 2px solid white; */
-    /*background-color: brown; */
     padding: 10px;
 }
 h1 a {
@@ -40,16 +39,15 @@ h1 a {
     font-size: 18px;
     font-weight: bold;
     list-style: none;
-    /*padding: 0px 20px; */
     margin: 0 30px;
     border-bottom: 2px solid white;
-    /*border: 2px solid white;
-    border-radius: 8px; */
 }
 .headermenu ul li a {
     text-decoration: none;
     color: white;
 }
+
+/* Hover over effect for menu items */
 .headermenu ul li:hover {
     font-size: 28px;
     color: darkolivegreen;
@@ -69,7 +67,6 @@ h1 a {
     background-position: center;
     background-size: cover;
     width: 100%;
-
 }
 .hero-text {
     border: 2px solid white;
@@ -78,8 +75,7 @@ h1 a {
     border-radius: 8px;
     height:fit-content;
     justify-content: space-between;
-    /*margin-left: 700px;*/
-    background-color: rgb(58, 58, 83);
+    background-color: var(--container-bgcolor);
     max-width: 910px;
 }
 
@@ -87,12 +83,16 @@ h1 a {
 .main-content {
     background-color: rgb(211, 214, 238);
 }
+
+/* Divide up the main sections of the body with same properties */
 .section-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     padding: 20px;
 }
+
+/* Common properties for left-side header of the container elements */
 .left-head {
     flex: 20%;
     font-size: x-large;
@@ -103,22 +103,29 @@ h1 a {
     padding-right: 8px;
     max-width: 200px;
 }
+
+/* Common properties for right-side of the flexbox elements */
 .whataboutme, .projects, .contactme-list {
     flex: 80%;
     max-width: 700px;
     margin-left: 50px;
 }
 
-/****** About Me Section */
+/****** About Me Section specifics */
+#aboutme {
+    margin-top: 20px;
+}
 .whataboutme {
     display: flex;
+    margin-top: 20px;
 }
 .selfie img {
     height:300px;
     width:250px;
+    border:var(--container-border);
 }
 .write-up {
-    color:rgb(58, 58, 83);
+    color: var(--primary-fontcolor);
     border: none;
     text-align: left;
     margin-left: 20px;
@@ -141,10 +148,6 @@ h1 a {
     display: block;
     width: 100%;
 }
-/*
-.project-a img:hover {
-    transform: scale(1.1);
-}*/
 .project-a h3 {
     position: absolute;
     bottom: 10px;
@@ -152,10 +155,7 @@ h1 a {
     background-color: var(--container-bgcolor);
     color: white;
     padding: 20px;
-}
-.project-a h3 a {
     text-decoration: none;
-    color: white;
 }
 /* Project B & C Container */
 .project-bc {
@@ -164,14 +164,16 @@ h1 a {
     flex-wrap: wrap;
     height: 100px;
     margin-bottom: 10px;
+    /*border: 5px solid red; */
 }
 .project-b {
-    flex: 50%;
+    flex: 49%;
     border: var(--container-border);
-    /*margin-right: 10px; */
+    margin-right: 1%;
     background-image: url("../images/Code-Refactor-bgImage.png");
-    background-size: cover;
     background-position: center;
+    background-size: cover;
+    /*border: 5px solid blue; */
 }
 .project-b:hover {
     transform: scale(1.05);
@@ -185,16 +187,16 @@ h1 a {
     padding: 20px;
     width:fit-content;
 }
-.project-b h3 a {
+.project-b a {
     text-decoration: none;
-    color: white;
 }
 .project-c {
-    flex: 50%;
+    flex: 49%;
     border: var(--container-border);
     background-image: url("../images/myPorfolio.png");
     background-size: cover;
     background-position: center;
+    /*border: 5px solid green; */
 }
 .project-c:hover {
     transform: scale(1.05);
@@ -208,12 +210,12 @@ h1 a {
     padding: 20px;
     width:fit-content;
 }
-.project-c h3 a {
+.project-c a {
     text-decoration: none;
-    color: white;
 }
 
 /* Project D & E Contaier */
+
 .project-de {
     display: flex;
     justify-content: space-between;
@@ -221,12 +223,12 @@ h1 a {
     height: 100px;
 }
 .project-d {
-    flex: 50%;
+    flex: 49%;
     border: var(--container-border);
-    background-color:greenyellow;
     background-image: url("../images/projectd-placeholderImage.jpg");
     background-position: center;
     background-size: cover;
+    margin-right: 1%;
 }
 .project-d:hover {
     transform:scale(1.05);
@@ -241,9 +243,8 @@ h1 a {
     width:fit-content;
 }
 .project-e {
-    flex: 50%;
+    flex: 49%;
     border: var(--container-border);
-    background-color:floralwhite;
     background-image: url("../images/projecte-placeholderImage.jpg");
     background-position: center;
     background-size: cover;
@@ -267,7 +268,7 @@ h1 a {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
     align-items: center;
 }
 .contactme-list ul {
