@@ -91,7 +91,7 @@ h1 a {
     flex-wrap: wrap;
     width: 100%;
     padding: 20px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 /* Common properties for left-side header of the container elements */
@@ -104,6 +104,11 @@ h1 a {
     text-align: right;
     padding-right: 8px;
     max-width: 200px;
+}
+#worktree {
+    flex: 80%;
+    /* margin-left: 5px;  */
+    width: 100%;
 }
 
 /* Common properties for right-side of the flexbox elements */
@@ -136,18 +141,50 @@ h1 a {
 /*************** Work Section ***************/
 
 /****** Projects Container ***********/
+
 .row {
     width: 90%;
-    align-content: center;
-    display: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(25%, -50%);
+    margin-left: 40px;
+    /* border: 1px solid brown; */
+}
+.row1, .row2 {
+    margin-bottom: 20px;
 }
 .row div {
-    border: 1px solid brown;
-    width: 200px;
-    height: 200px;
+    /* border: 1px solid brown; */
+    /* width: 100px; */
+    height: auto;
+    text-align: center;
+}
+.card img {
+    width: auto;
+    height: 100px;
+}
+.card img.team-img {
+    height: 150px;
+}
+.card-title {
+    font-weight: bolder;
+}
+.card-text {
+    font-size: smaller;
+}
+
+.row-3, .row-4 {
+    height: 45px;
+    /* background-color: var(--container-bgcolor); */
+    color: white;
+    /* padding-top: 7px; */
+    margin-bottom: 2px;
+}
+.row-3 div, .row-4 div {
+    padding-top: 8px;
+    border: 1px solid gainsboro;
+    background-color: var(--container-bgcolor);
+    border-radius: 5px;
+}
+#row-3-1, #row-3-6 {
+    background: none;
 }
 
 /* Top project A ***********/
