@@ -115,7 +115,7 @@ h1 a {
 .whataboutme, .projects, .contactme-list {
     flex: 80%;
     max-width: 700px;
-    margin-left: 50px;
+    margin-left: 62px;
 }
 
 /****** About Me Section specifics */
@@ -141,6 +141,7 @@ h1 a {
 /*************** Work Section ***************/
 
 /****** Projects Container ***********/
+/* Using MD Bootstrap to complement CSS */
 
 .row {
     width: 90%;
@@ -156,11 +157,14 @@ h1 a {
     height: auto;
     text-align: center;
 }
+.row div:hover {
+    transform:scale(1.03);
+}
 .card img {
     width: auto;
     height: 100px;
 }
-.card img.team-img {
+.card img.top-row {
     height: 150px;
 }
 .card-title {
@@ -176,6 +180,7 @@ h1 a {
     color: white;
     /* padding-top: 7px; */
     margin-bottom: 2px;
+    justify-content: center;
 }
 .row-3 div, .row-4 div {
     padding-top: 8px;
@@ -185,143 +190,9 @@ h1 a {
 }
 #row-3-1, #row-3-6 {
     background: none;
+    ;
 }
 
-/* Top project A ***********/
-/* .project-a {
-    position: relative;
-    border: var(--container-border);
-    margin-bottom: 10px;
-}
-.project-a:hover {
-    transform: scale(1.05);
-}
-
-.project-a img {
-    display: block;
-    width: 100%;
-}
-.project-a h3 {
-    position: absolute;
-    bottom: 10px;
-    left: 0px;
-    background-color: var(--container-bgcolor);
-    color: white;
-    padding: 20px;
-    text-decoration: none;
-}
-/***** Project B & C Container ******/
-/* .project-bc {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 100px;
-    margin-bottom: 10px;
-    /*border: 5px solid red; */
-/* } */
-
-/* Project B ******/
-/* .project-b {
-    flex: 49%;
-    border: var(--container-border);
-    margin-right: 1%;
-    background-image: url("../images/Code-Refactor-bgImage.png");
-    background-position: center;
-    background-size: cover;
-    /*border: 5px solid blue; */
-/* } */
-/* .project-b:hover {
-    transform: scale(1.05);
-} */
-/* .project-b h3 {
-    position: relative;
-    top: 20px;
-    left: 0px;
-    background-color: var(--container-bgcolor);
-    color: white;
-    padding: 20px;
-    width:fit-content;
-}  */
-/* .project-b a {
-    text-decoration: none;
-} */
-
-/* Project C ********/
-/* .project-c {
-    flex: 49%;
-    border: var(--container-border);
-    background-image: url("../images/myPorfolio.png");
-    background-size: cover;
-    background-position: center;
-    /*border: 5px solid green; */
-/* } */
-/* .project-c:hover {
-    transform: scale(1.05);
-}
-.project-c h3 {
-    position: relative;
-    top: 20px;
-    left: 0px;
-    background-color: var(--container-bgcolor);
-    color: white;
-    padding: 20px;
-    width:fit-content;
-} */
-/* .project-c a {
-    text-decoration: none;
-} */
-
-/******* Project D & E Contaier *******/
-
-/* .project-de {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 100px;
-} */
-
-/* Project D - Placeholder Project ********/
-/* .project-d {
-    flex: 49%;
-    border: var(--container-border);
-    background-image: url("../images/projectd-placeholderImage.jpg");
-    background-position: center;
-    background-size: cover;
-    margin-right: 1%;
-}
-.project-d:hover {
-    transform:scale(1.05);
-}
-.project-d h3 {
-    position: relative;
-    top: 20px;
-    left: 0px;
-    background-color: var(--container-bgcolor);
-    color: white;
-    padding: 20px;
-    width:fit-content;
-} */
-
-/* Project E - Placeholder Project ********/
-/* .project-e {
-    flex: 49%;
-    border: var(--container-border);
-    background-image: url("../images/projecte-placeholderImage.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.project-e:hover {
-    transform: scale(1.05);
-}
-.project-e h3 {
-    position: relative;
-    top: 20px;
-    left: 0px;
-    background-color: var(--container-bgcolor);
-    color: white;
-    padding: 20px;
-    width:fit-content;
-} */ 
 
 /********** Contact Me Section **************/
 
@@ -331,7 +202,7 @@ h1 a {
     width: 100%;
     padding: 20px 20px 40px 20px;
     align-items: center;
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
 }
 
 /* Contact me unordered list */
@@ -373,6 +244,7 @@ h1 a {
         border-right: none;
         border-bottom-width:3px;
         border-bottom-style: solid;
+        /* display: block; */
         text-align: center;
         padding-bottom: 8px;
         margin-bottom: 10px;
@@ -381,6 +253,9 @@ h1 a {
         justify-content: center;
         width: 95%;
         margin-right: 50px;
+    }
+    .row-3, .row-4 {
+        margin-bottom: 15px;
     }
 }
 /* For screen size smaller than or equal to 768px **/
